@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà chủ tịch 3 đời bán giò</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3143/3143643.png" type="image/x-icon">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="/assets/bootstrap/owl.carousel.min.css">
+    <!--Slider owlcarousel -->
+    <link rel="stylesheet" href="/assets/bootstrap/owl.theme.default.css">
+    <link rel="stylesheet" href="/assets/bootstrap/bootstrap.min.css">
+    <!--Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!--Icons -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
+    <style type="text/css">
+        button {
+            padding: 1em;
+            background-color: #1560bd;
+            color: #ffffff;
+            border-radius: 0.2em;
+            border-style: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- thanh đầu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" id="navbar">
+        <div class="container">
+            <!-- các chữ trong thanh đầu -->
+            <a href="./index.html" class="navbar-brand">
+                <!-- logo -->
+                <i class="fas fa-shopping-basket"></i> Đô Ngân
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sanpham.php">sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./lienhe.html">liên hệ</a>
+                    </li>
+                </ul>
+                <!-- icons -->
+                <a href="#" data-bs-toggle="modal" data-bs-target="#search-modal"
+                    class="btn btn-brand ms-lg-3 navbar-button">
+                    <i class='fas fa-search'></i></a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#cart-modal"
+                    class="btn btn-brand ms-lg-3 navbar-button">
+                    <i class='fas fa-shopping-cart'></i></a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#login-modal"
+                    class="btn btn-brand ms-lg-3 navbar-button">
+                    <i class='fas fa-user'></i></a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Slide -->
+    <div class="owl-carousel owl-theme hero-slider">
+        <div class="slide slide1">
+            <div class="carousel-caption">
+                <h1 class="display-2">Giò Chả</h1>
+                <h3>phú cường- sóc sơn- hà nội</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">
+                    Mua ngay
+            </div>
+        </div>
+        <div class="slide slide2">
+            <div class="carousel-caption">
+                <h1 class="display-2">giò chả</h1>
+                <h3>phú cường- sóc sơn- hà nội</h3>
+                <!-- nút outline :))) -->
+                <button type="button" class="btn btn-outline-light btn-lg">
+                    Mua ngay
+            </div>
+        </div>
+        <div class="slide slide3">
+            <div class="carousel-caption">
+                <h1 class="display-2">Giò Chả</h1>
+                <h3>phú cường- sóc sơn- hà nội</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">
+                    Mua ngay
+            </div>
+        </div>
+    </div>
+
+    <!--  Sản phẩm-->
+    <section class="product">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1>Sản Phẩm Nổi Bật</h1>
+                    <div class="underline m-3 mx-auto text-center "></div>
+                </div>
+            </div>
+            <!-- 1 -->
+            <div class="row">
+                <div class="col-lg-3 text-center">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="/assets/ảnh/giò lợn.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <h6 class="product-name">giò lụa</h6>
+                    <p class="product-price">120.000 VNĐ</p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <div class="card border-0 bg-light">
+                        <div class="card-body">
+                            <img src="/assets/ảnh/chả lợn (2).jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <h6 class="product-name">Chả lụa</h6>
+                    <p class="product-price">120.000 VNĐ</p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <div class="card border-0 bg-light">
+                        <div class="card-body">
+                            <img src="/assets/ảnh/xúc xích lợn (2).jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <h6 class="product-name">xúc xích lợn</h6>
+                    <p class="product-price">120.000 VNĐ</p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <div class="card border-0 bg-light">
+                        <div class="card-body">
+                            <img src="/assets/ảnh/giò bò (2).jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <h6 class="product-name">giò bò</h6>
+                    <p class="product-price">250.000 VNĐ</p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="row">
+                <div class="col-lg-3 text-center">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="/assets/ảnh/chả cá (2).jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <h6 class="product-name">Chả Cá</h6>
+                    <p class="product-price">150.000 VNĐ</p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <div class="card border-0 bg-light">
+                        <div class="card-body">
+                            <img src="/assets/ảnh/chả mực (2).jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <h6 class="product-name">chả mực</h6>
+                    <p class="product-price">520.000 VNĐ</p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <div class="card border-0 bg-light">
+                        <div class="card-body">
+                            <img src="/assets/ảnh/chả quế.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <h6 class="product-name">Chả quế</h6>
+                    <p class="product-price">180.000 VNĐ</p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <div class="card border-0 bg-light">
+                        <div class="card-body">
+                            <img src="/assets/ảnh/giò hoa (2).jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <h6 class="product-name">giò hoa</h6>
+                    <p class="product-price">140.000 VNĐ</p>
+                </div>
+            </div>
+
+            <div class="row py-5">
+                <div class="col-lg-5 m-auto text-center">
+                    <a href="./sanpham.php"><button type="button" class="btn-product">Mua Ngay</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Banner Quảng cáo -->
+    <section class="banner py-2">
+        <div class="container text-white py-5">
+            <div class="row py-5" id="banner-title">
+                <div class="col-lg-6">
+                    <h1 class="font-weight-bold py-3" id="banner-brand">Giò Chả Webshark - Phú Cường</h1>
+                    <h6 id="banner-slogan">Giò chả số 1 Miền Bắc</h6>
+                    <a href="./lienhe.html"><button class="btn1 mt-3">Liên Hệ</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sản phẩm ưa thích -->
+    <section class="product-2">
+        <div class="container py-5">
+            <div class="row py-5" id="favorite-title">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1>Sản Phẩm Ưa Thích</h1>
+                    <div class="underline m-3 mx-auto text-center "></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="/assets/ảnh/giò lợn.jpg" alt="" class="img-fluid mb-3">
+                    <h5 class="favorite-name">giò lụa</h5>
+                    <p class="favorite-review">
+                        Giò lợn là món ăn sử dụng nguyên liệu chính là thịt heo, say nhuyễn, được nén chặt và luộc chín
+                        trong nước. giò lợn thường xuất hiện trong các mâm cỗ của người Việt.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="/assets/ảnh/chả lợn (2).jpg" alt="" class="img-fluid mb-3">
+                    <h5 class="favorite-name">Chả lụa</h5>
+                    <p class="favorite-review">
+                        Tương tự giò lụa, chả lụa được làm bằng thịt heo, say nhuyễn, luộc chín trong nước rồi đem rán
+                        vàng bề mặt chả.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="/assets/ảnh/giò bò (2).jpg" alt="" class="img-fluid mb-3">
+                    <h5 class="favorite-name">giò bò</h5>
+                    <p class="favorite-review">
+                        Giò bò là món ăn sử dụng nguyên liệu chính là thịt bò, say nhuyễn, được nén chặt và luộc chín
+                        trong nước. Giò bò là món ăn dân dã bổ dưỡng cho cơ thể. thường xuất hiện trong mâm cơm của
+                        người Việt.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row py-5">
+                <div class="col-lg-5 m-auto text-center">
+                    <a href="./sanpham.php"><button type="button" class="btn-product">Mua Ngay</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer - chân trang -->
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-about">
+                        <h6>Thông tin liên hệ</h6>
+                        <ul>
+                            <li>Địa chỉ: Hương Gia, Phú Cường, Sóc Sơn - Hà Nội</li>
+                            <li>SĐT: 0339722743</li>
+                            <li>Email: tandot636@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mx-auto">
+                    <div class="footer-widget">
+                        <h6>Webshark</h6>
+                        <ul>
+                            <li><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="./sanpham.php">Sản Phẩm</a></li>
+                            <li><a href="./tintuc.html">Tin Tức</a></li>
+                            <li><a href="./lienhe.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-widget">
+                        <h6>Liên Hệ</h6>
+                        <p>Nhận thông tin cập nhật qua email về sản phẩm mới nhất của chúng tôi và các ưu đãi đặc biệt.
+                        </p>
+                        <form action="#">
+                            <input type="text" placeholder="Nhập email của bạn...">
+                            <button type="submit" class="site-btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer-copyright">
+                        <div class="footer-copyright-text">
+                            <p>Liện hệ với
+                                <a href="https://www.facebook.com/profile.php?id=100017334426579" target="_blank">Trần
+                                    Đô</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- pop-up modal -->
+    <!-- hiệu ứng fade -->
+    <div class="modal fade" id="search-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content search-form">
+                <div class="modal-body search-body">
+                    <div class="container-fluid">
+                        <input type="search" placeholder="Tìm kiếm ...">
+                        <label for="search-box" class="fas fa-search"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cart -giỏ hàng -->
+    <!-- tabindex : càng lớn càng ở đầu -->
+    <div class="modal fade" id="cart-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content cart-form">
+                <div class="modal-body cart-body">
+                    <div class="shopping-cart">
+                        <div class="box">
+                            <i class="fas fa-trash"></i>
+                            <img src="/assets/ảnh/giò bò (2).jpg" alt="">
+                            <div class="content">
+                                <h3>Giò Bò</h3>
+                                <span class="price">250.000 VND</span>
+                                <span class="quantity">số lượng : 1</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fas fa-trash"></i>
+                            <img src="/assets/ảnh/chả lợn (2).jpg" alt="">
+                            <div class="content">
+                                <h3>Chả Lụa</h3>
+                                <span class="price">120.000 VND</span>
+                                <span class="quantity">số lượng : 1</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fas fa-trash"></i>
+                            <img src="/assets/ảnh/giò lợn.jpg" alt="">
+                            <div class="content">
+                                <h3>Giò Lụa</h3>
+                                <span class="price">120.000 VND</span>
+                                <span class="quantity">số lượng : 1</span>
+                            </div>
+                        </div>
+                        <div class="total"> tổng : 490.000 VND </div>
+                        <a href="./thanhtoan.html" class="btn-modal mx-auto">Thanh Toán</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login -->
+    <div class="modal fade" id="login-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content login-form">
+                <div class="modal-body login-body">
+                    <div class="login-form">
+                        <h3>ĐĂNG NHẬP</h3>
+                        <input type="email" placeholder="Email của bạn" class="box">
+                        <input type="password" placeholder="Mật khẩu" class="box">
+                        <p>Quên mật khẩu <a href="#">Nhấn vào đây</a></p>
+                        <p>Chưa có tài khoản ? <a href="#">Đăng ký</a></p>
+                        <input type="submit" value="Đăng Nhập" class="btn-modal">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/slide.js"></script>
+    <script src="/assets/js/owl.carousel.js"></script>
+
+</body>
+
+</html>
