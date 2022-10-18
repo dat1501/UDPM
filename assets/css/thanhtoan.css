@@ -1,0 +1,564 @@
+/* font chữ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root {
+    --fontdefault:'Montserrat', sans-serif;
+    --brand: #ff4d29;
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* viền */
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    /* bobby chống chàn =))))))) */
+    overflow-x: hidden;
+    /* cuộn mượt */
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+/* nền */
+body {
+    background: #fff;
+}
+
+
+
+#navbar {
+    padding: 2rem 9%;
+    color: var(--black);
+    box-shadow: var(--box-shadow);
+}
+/* logo */
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.navbar-brand i {
+    font-size: 30px;
+    color: var(--orange);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    /* chỉnh font */
+    color: var(--black);
+    font-size: 1.8rem;
+    margin: 0 1rem;
+    text-transform: uppercase;
+}
+
+.nav-link{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.navbar .navbar-nav .nav-link:hover{
+   color: var(--orange);
+}
+.navbar-button {
+    /* chỉnh phần icon trên thanh navbar */
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    /* pointer hình ban tay */
+    cursor: pointer;
+    font-weight: bold;
+    /* căn giữa icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-button:hover {
+    background: var(--orange);
+    color: #fff;
+}
+@media (max-width: 1000px) {
+    .navbar-nav {
+        padding-top: 20px;
+    }
+
+    .navbar-button {
+        display: inline-flex;
+        margin-top: 20px;
+    }
+}
+
+/* modal */
+.btn-modal {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+    text-decoration: none;
+}
+.btn-modal:hover{
+    color: #fff;
+    border: none;
+    background: var(--orange);
+}
+
+/*search */
+#search-modal{
+    top: 30vh;
+}
+
+.search-body{
+    padding: 0;
+}
+.container-fluid{
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.container-fluid input{
+    height:100%;
+    width:100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color:var(--black);
+    padding:0 1.5rem;
+}
+.container-fluid label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color:var(--black);
+    cursor: pointer;
+}
+
+.container-fluid label:hover{
+    color:var(--orange);
+}
+
+/* cart - giỏ hàng*/
+
+.cart-body{
+    padding: 0;
+}
+
+.shopping-cart{
+    width: 100%;
+    padding:1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+}
+
+.shopping-cart .box{
+    display: flex;
+    align-items: center;
+    /* gap khoảng cách các grid */
+    gap:1rem;
+    position: relative;
+    margin:1rem 0;
+}
+
+.shopping-cart .box img{
+    height:10rem;
+}
+/* trash -rác */
+.shopping-cart .box .fa-trash{
+    font-size: 2rem;
+    position: absolute;
+    top:50%; right:2rem;
+    cursor: pointer;
+    color:var(--light-color);
+}
+
+.shopping-cart .box .fa-trash:hover{
+    color:var(--orange);
+}
+
+.shopping-cart .box .content h3{
+    color:var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.shopping-cart .box .content span{
+    color:var(--light-color);
+    font-size: 1.6rem;
+}
+/* .quantity - số lượng */
+.shopping-cart .box .content .quantity{
+    padding-left: 1rem;
+}
+/* tổng  */
+.shopping-cart .total{
+    font-size: 2.5rem;
+    padding:1rem 0;
+    text-align: center;
+    color:var(--black);
+}
+
+.shopping-cart .btn-modal{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin:1rem;
+}
+
+
+/* Login */
+.login-form{
+    padding:2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+.login-form h3{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    padding-bottom: 30px;
+}
+
+.login-form .box{
+    width: 100%;
+    margin:.7rem 0;
+    background:#eee;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.login-form p{
+    font-size: 1.4rem;
+    padding:.5rem 0;
+    color:var(--light-color);
+}
+
+.login-form p a{
+    color:var(--orange);
+    text-decoration: underline;
+}
+.form-control{
+    font-size: 100%;
+}
+
+/* Footer - Chân trang */
+.footer {
+    background: #F3F6FA;
+    margin-top: 20px;
+    padding-top: 100px;
+    padding-bottom: 0;
+
+}
+
+.footer-about {
+    margin-bottom: 30px;
+    padding: 0 30px;
+}
+
+.footer-about ul li {
+    font-size: 16px;
+    color: #1c1c1c;
+    line-height: 36px;
+    list-style: none;
+}
+
+.footer-widget {
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding-left: 30px;
+}
+
+.footer h6{
+    font-family: 'Poppins', sans-serif;
+    color: #1c1c1c;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+.footer-widget ul {
+    margin: 0px auto;
+    width: 100%;
+}
+
+.footer-widget ul li {
+    list-style: none;
+    text-align: justify;
+}
+
+.footer-widget ul li a {
+    color: #1c1c1c;
+    font-size: 16px;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+.footer-widget p {
+    font-size: 14px;
+    color: #1c1c1c;
+    margin-bottom: 30px;
+}
+
+.footer-widget form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.footer-widget form input {
+    width: 100%;
+    font-size: 16px;
+    padding-left: 20px;
+    color: #1c1c1c;
+    height: 46px;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+}
+
+.footer-widget form input::placeholder {
+    color: #ccc;
+}
+
+.footer-widget form button {
+    /* absolute : cho button đè lên trên input */
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 26px;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.site-btn {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 13px 30px 12px;
+    background: #7fad39;
+    border: none;
+    font-family: var(--fontdefault)
+}
+/* liên hệ Trần Đô */
+.footer-copyright {
+    border-top: 1px solid #ebebeb;
+    padding: 15px 0;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.footer-copyright-text {
+    font-size: 14px;
+    color: #1c1c1c;
+    line-height: 25px;
+}
+
+/* chỉnh footer ul */
+.footer ul{
+    padding: 0
+}
+
+/*Media Query - Để responsive*/
+@media (max-width: 1200px) {
+
+    #banner-title {
+        padding-top: 75px !important;
+        padding-bottom: 0px !important;
+    }
+
+    #banner-brand {
+        padding: 20px 0px;
+        font-size: 45px;
+    }
+
+    #banner-slogan {
+        padding: 20px 0;
+        font-size: 1.5rem;
+    }
+
+    .btn1 {
+        padding: 10px 60px;
+        background-color: var(--orange);
+        border: none;
+        border-radius: 10px;
+        color: #eee;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    /* chỉnh chữ slide <992px */
+    /* Reponsive */
+    .carousel-caption h1 {
+        font-size: 50px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 30px;
+    }
+
+    .carousel-caption .btn {
+        font-size: 16px;
+    }
+
+    .banner {
+        height: 65vh;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 45px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 20px;
+        padding-bottom: 0.2rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    #banner-title {
+        padding-top: 75px !important;
+        padding-bottom: 0px !important;
+    }
+
+    #banner-brand {
+        padding: 20px 0px;
+        font-size: 45px;
+    }
+
+    #banner-slogan {
+        padding: 20px 0;
+        font-size: 1.5rem;
+    }
+
+    .btn1 {
+        padding: 10px 60px;
+        background-color: var(--orange);
+        border: none;
+        border-radius: 10px;
+        color: #eee;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h1 {
+        font-size: 40px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 22px;
+    }
+
+    .carousel-caption .btn {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    #banner-title {
+        padding-top: 25px !important;
+        padding-bottom: 20px !important;
+    }
+
+    #banner-brand {
+        padding: 20px 0px;
+        font-size: 45px;
+    }
+
+    #banner-slogan {
+        padding: 20px 0;
+        font-size: 1.5rem;
+    }
+
+    .btn1 {
+        padding: 10px 60px;
+        background-color: var(--orange);
+        border: none;
+        border-radius: 10px;
+        color: #eee;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 280px) {
+    .carousel-caption {
+        top: 25%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 35px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 20px;
+    }
+
+    .carousel-caption .btn {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    #banner-title {
+        padding-top: 15px !important;
+        padding-bottom: 20px !important;
+    }
+
+    #banner-brand {
+        padding: 20px 0px;
+        font-size: 35px;
+    }
+
+    #banner-slogan {
+        padding: 20px 0;
+        font-size: 1.5rem;
+    }
+
+    .btn1 {
+        padding: 10px 60px;
+        background-color: var(--orange);
+        border: none;
+        border-radius: 10px;
+        color: #eee;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
